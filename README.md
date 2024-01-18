@@ -1,9 +1,12 @@
-# tc_multi_webdriver_example
+# tc_multi_webdriver_sample
 
 This is a Cucumber based sample test suite and framework utilizing the TestCentricity™ Web gem and a page-object model
-architecture for desktop and mobile web functional testing of the Appium Pro Chat web portal. This example is intended
+architecture for desktop and mobile web functional testing using the Appium Pro Chat web portal. This example is intended
 to demonstrate the instantiation of multiple WebDriver instances within a test case or test scenario to support the
 verification of real-time multiple user interactions across multiple concurrent browsers.
+
+This project was inspired by [**Edition 118 (Testing Real-Time User Interaction Using Multiple Simultaneous Appium Sessions)**](https://appiumpro.com/editions/118-testing-real-time-user-interaction-using-multiple-simultaneous-appium-sessions)
+on the Appium Pro web site.
 
 
 ## Gem Dependencies:
@@ -22,15 +25,15 @@ testcentricity_web  [![Gem Version](https://badge.fury.io/rb/testcentricity_web.
 
 ## Prerequisites to running tests:
 
-In order for Cucumber to execute the features and scenarios in the `tc_multi_webdriver_example` test automation project
+In order for Cucumber to execute the features and scenarios in the `tc_multi_webdriver_sample` test automation project
 against desktop web browsers, you must have the Chrome, Firefox, and Edge desktop browsers installed on the test system
 where the tests will be run.
 
-The `tc_multi_webdriver_example` test automation project also supports running tests against mobile web browsers running
+The `tc_multi_webdriver_sample` test automation project also supports running tests against mobile web browsers running
 on iOS simulators and Android virtual device emulators. The capabilities profiles for running tests against an iPhone,
 iPad, Android phone, and an Android tablet are stored in the test data asset file located at `/config/test_data/data.yml`.
 
-    📁 tc_multi_webdriver_example
+    📁 tc_multi_webdriver_sample
      ├── 📁 config
      │   └── 📁 test_data
      │       └── 📄 data.yml
@@ -57,7 +60,7 @@ and devices.
 
 ## Instructions for running tests
 
-In order for Cucumber to execute features or scenarios from the `tc_multi_webdriver_example` test automation project, the
+In order for Cucumber to execute features or scenarios from the `tc_multi_webdriver_sample` test automation project, the
 `test_context` must be specified in the Cucumber command line at runtime. There are 3 test execution modes, or `test_context`,
 that are supported:
   * `desktop`  - Desktop browsers only
@@ -94,7 +97,7 @@ that are supported:
 3. Upon completion of test execution, the Terminal will display the final test results.
 
 4. If you specified in the command line that HTML formatted test results should be generated (`-p report`), you can view 
-   them by opening the `reports` folder in the `tc_multi_webdriver_example` project directory, and selecting the `test_results.html`
+   them by opening the `reports` folder in the `tc_multi_webdriver_sample` project directory, and selecting the `test_results.html`
    file. Right-clicking on the `test_results.html` file will display a popup menu. Select the **Open in Browser** menu
    item, and then select a web browser from the popup sub menu that appears. The formatted test results will open in the
    web browser that you selected.
@@ -105,7 +108,7 @@ that are supported:
 Detailed HTML documentation of the features, scenarios, step definitions, classes, and methods for the `tc_multi_webdriver_example`
 project can be accessed from the `index.html` file within the `doc` folder in the `tc_multi_webdriver_example` project folder:
 
-    📁 tc_multi_webdriver_example
+    📁 tc_multi_webdriver_sample
      ├── 📁 config
      ├── 📁 doc
      │   └── 📄 index.html
