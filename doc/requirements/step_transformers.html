@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Step Definitions and Transforms
+  
+    &mdash; Documentation by YARD 0.9.34
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" />
+
+  <link rel="stylesheet" href="../css/cucumber.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "requirements::step_transformers";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/cucumber.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../_index.html">Index (s)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../requirements.html" title="requirements (requirements)">requirements</a></span></span>
+     &raquo; 
+    <span class="title">step_transformers</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="feature_list_link"
+        href="../feature_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><div class="requirements">
+  <div class="title">Step Definitions &amp; Transforms</div>
+
+  <div class="summary">
+    <div>8<a href="#step_definitions">Step Definitions</a></div>
+    <div>0<a href="#step_transforms">Step Transforms</a></div>
+    <div>0<a href="#undefined_steps">Undefined Steps</a></div>
+  </div>
+
+</div><div class="title">
+  
+     <a class="control" id="stepdefinition">[Collapse All]</a>
+     <div style="clear: right;"></div>
+   
+ 
+  
+    <a name="step_definitions">
+  
+  <div class="name">Step Definitions</div>
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition8-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^all users should see (?:their|the) post in the list of posts$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5Eall+users+should+see+(%3F:their%7Cthe)+post+in+the+list+of+posts$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/chat_steps.rb:50</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">50
+51
+52
+53
+54
+55</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^all users should see (?:their|the) post in the list of posts$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='gvar'>$users</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_user'>user</span><span class='op'>|</span>
+    <span class='const'>WebDriverConnect</span><span class='period'>.</span><span class='id identifier rubyid_activate_driver'>activate_driver</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_channel_chat_page'>channel_chat_page</span><span class='period'>.</span><span class='id identifier rubyid_verify_post'>verify_post</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="6 steps">Hide 6 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            all users should see the post in the list of posts
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/chat.html">features/chat.feature:23</a>
+        
+        <a class="definition" style="clear: right;" href="features/chat_2_users.html">features/chat_2_users.feature:21</a>
+        
+        <a class="definition" style="clear: right;" href="features/chat_2_users.html">features/chat_2_users.feature:23</a>
+        
+        <a class="definition" style="clear: right;" href="features/chat_3_users.html">features/chat_3_users.feature:25</a>
+        
+        <a class="definition" style="clear: right;" href="features/chat_3_users.html">features/chat_3_users.feature:27</a>
+        
+        <a class="definition" style="clear: right;" href="features/chat_3_users.html">features/chat_3_users.feature:29</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition5-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^user (.*) posts a message to the chat channel$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5Euser+(%2E*)+posts+a+message+to+the+chat+channel$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/chat_steps.rb:30</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">30
+31
+32
+33</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^user (.*) posts a message to the chat channel$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_user'>user</span><span class='op'>|</span>
+  <span class='const'>WebDriverConnect</span><span class='period'>.</span><span class='id identifier rubyid_activate_driver'>activate_driver</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_channel_chat_page'>channel_chat_page</span><span class='period'>.</span><span class='id identifier rubyid_send_post'>send_post</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="6 steps">Hide 6 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            user <span class='match'>Moose and Squirrel</span> posts a message to the chat channel
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/chat.html">features/chat.feature:22</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            user <span class='match'>Sherman</span> posts a message to the chat channel
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/chat_2_users.html">features/chat_2_users.feature:20</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            user <span class='match'>Peabody</span> posts a message to the chat channel
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/chat_2_users.html">features/chat_2_users.feature:22</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            user <span class='match'>Larry</span> posts a message to the chat channel
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/chat_3_users.html">features/chat_3_users.feature:24</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            user <span class='match'>Moe</span> posts a message to the chat channel
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/chat_3_users.html">features/chat_3_users.feature:26</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            user <span class='match'>Curly</span> posts a message to the chat channel
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/chat_3_users.html">features/chat_3_users.feature:28</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition2-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Given</span>
+    <span class="name">/^that user (.*) has created a new channel on the Appium Pro Chat portal$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5Ethat+user+(%2E*)+has+created+a+new+channel+on+the+Appium+Pro+Chat+portal$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/chat_steps.rb:9</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">9
+10
+11
+12</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Given</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^that user (.*) has created a new channel on the Appium Pro Chat portal$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_user'>user</span><span class='op'>|</span>
+  <span class='id identifier rubyid_initiate_chat'><span class='object_link'><a href="../top-level-namespace.html#initiate_chat-instance_method" title="#initiate_chat (method)">initiate_chat</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_join_channel_page'>join_channel_page</span><span class='period'>.</span><span class='id identifier rubyid_join_channel'>join_channel</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="4 steps">Hide 4 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Given 
+          </span>
+          <span class="defined">
+            that user <span class='match'>Moose and Squirrel</span> has created a new channel on the Appium Pro Chat portal
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/chat.html">features/chat.feature:16</a>
+        
+        <a class="definition" style="clear: right;" href="features/chat.html">features/chat.feature:21</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            Given 
+          </span>
+          <span class="defined">
+            that user <span class='match'>Peabody</span> has created a new channel on the Appium Pro Chat portal
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/chat_2_users.html">features/chat_2_users.feature:11</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Given 
+          </span>
+          <span class="defined">
+            that user <span class='match'>Larry</span> has created a new channel on the Appium Pro Chat portal
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/chat_3_users.html">features/chat_3_users.feature:11</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition3-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Given</span>
+    <span class="name">/^user (.*) joins the chat channel$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5Euser+(%2E*)+joins+the+chat+channel$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/chat_steps.rb:15</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">15
+16
+17
+18</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Given</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^user (.*) joins the chat channel$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_user'>user</span><span class='op'>|</span>
+  <span class='id identifier rubyid_initiate_chat'><span class='object_link'><a href="../top-level-namespace.html#initiate_chat-instance_method" title="#initiate_chat (method)">initiate_chat</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_join_channel_page'>join_channel_page</span><span class='period'>.</span><span class='id identifier rubyid_join_channel'>join_channel</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="3 steps">Hide 3 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            user <span class='match'>Sherman</span> joins the chat channel
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/chat_2_users.html">features/chat_2_users.feature:12</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            user <span class='match'>Curly</span> joins the chat channel
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/chat_3_users.html">features/chat_3_users.feature:12</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            user <span class='match'>Moe</span> joins the chat channel
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/chat_3_users.html">features/chat_3_users.feature:13</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition4-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^the (.*) page is correctly displayed$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5Ethe+(%2E*)+page+is+correctly+displayed$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/chat_steps.rb:21</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">21
+22
+23
+24
+25
+26
+27</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^the (.*) page is correctly displayed$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_page_name'>page_name</span><span class='op'>|</span>
+  <span class='comment'># find and verify that the specified target page is loaded
+</span>  <span class='id identifier rubyid_target_page'>target_page</span> <span class='op'>=</span> <span class='const'>PageManager</span><span class='period'>.</span><span class='id identifier rubyid_find_page'>find_page</span><span class='lparen'>(</span><span class='id identifier rubyid_page_name'>page_name</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_target_page'>target_page</span><span class='period'>.</span><span class='id identifier rubyid_verify_page_exists'>verify_page_exists</span>
+  <span class='comment'># verify that target page is correctly displayed
+</span>  <span class='id identifier rubyid_target_page'>target_page</span><span class='period'>.</span><span class='id identifier rubyid_verify_page_ui'>verify_page_ui</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="2 steps">Hide 2 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            the <span class='match'>Join Channel</span> page is correctly displayed
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/chat.html">features/chat.feature:12</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            the <span class='match'>Channel Chat</span> page is correctly displayed
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/chat.html">features/chat.feature:17</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition7-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^user (.*) should see that user (.*) has joined the chat channel$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5Euser+(%2E*)+should+see+that+user+(%2E*)+has+joined+the+chat+channel$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/chat_steps.rb:44</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">44
+45
+46
+47</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^user (.*) should see that user (.*) has joined the chat channel$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_user1'>user1</span><span class='comma'>,</span> <span class='id identifier rubyid_user2'>user2</span><span class='op'>|</span>
+  <span class='const'>WebDriverConnect</span><span class='period'>.</span><span class='id identifier rubyid_activate_driver'>activate_driver</span><span class='lparen'>(</span><span class='id identifier rubyid_user1'>user1</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_channel_chat_page'>channel_chat_page</span><span class='period'>.</span><span class='id identifier rubyid_verify_user_joined'>verify_user_joined</span><span class='lparen'>(</span><span class='id identifier rubyid_user2'>user2</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="2 steps">Hide 2 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            user <span class='match'>Peabody</span> should see that user <span class='match'>Sherman</span> has joined the chat channel
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/chat_2_users.html">features/chat_2_users.feature:16</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            user <span class='match'>Curly</span> should see that user <span class='match'>Moe</span> has joined the chat channel
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/chat_3_users.html">features/chat_3_users.feature:20</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition1-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Given</span>
+    <span class="name">/^that user (.*) has launched the Appium Pro Chat portal$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5Ethat+user+(%2E*)+has+launched+the+Appium+Pro+Chat+portal$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/chat_steps.rb:4</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">4
+5
+6</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Given</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^that user (.*) has launched the Appium Pro Chat portal$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_user'>user</span><span class='op'>|</span>
+  <span class='id identifier rubyid_initiate_chat'><span class='object_link'><a href="../top-level-namespace.html#initiate_chat-instance_method" title="#initiate_chat (method)">initiate_chat</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Given 
+          </span>
+          <span class="defined">
+            that user <span class='match'>Moose and Squirrel</span> has launched the Appium Pro Chat portal
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/chat.html">features/chat.feature:11</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition6-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^user (.*) should see that the following users have joined the chat channel:$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5Euser+(%2E*)+should+see+that+the+following+users+have+joined+the+chat+channel:$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/chat_steps.rb:36</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">36
+37
+38
+39
+40
+41</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^user (.*) should see that the following users have joined the chat channel:$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_table'>table</span><span class='op'>|</span>
+  <span class='const'>WebDriverConnect</span><span class='period'>.</span><span class='id identifier rubyid_activate_driver'>activate_driver</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_table'>table</span><span class='period'>.</span><span class='id identifier rubyid_raw'>raw</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_joiner'>joiner</span><span class='op'>|</span>
+    <span class='id identifier rubyid_channel_chat_page'>channel_chat_page</span><span class='period'>.</span><span class='id identifier rubyid_verify_user_joined'>verify_user_joined</span><span class='lparen'>(</span><span class='id identifier rubyid_joiner'>joiner</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            user <span class='match'>Larry</span> should see that the following users have joined the chat channel:
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/chat_3_users.html">features/chat_3_users.feature:17</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+<div class="title">
+  
+     <a class="control" id="steptransform">[Collapse All]</a>
+     <div style="clear: right;"></div>
+   
+ 
+  
+    <a name="step_transforms">
+  
+  <div class="name">Step Transforms</div>
+</div>
+
+<div class="title">
+  
+ 
+  
+    <a name="undefined_steps">
+  
+  <div class="name">Undefined Steps</div>
+</div>
+
+<div class="transformer">
+  <div class="steps">
+  
+    <div class="steps">
+      <div class="undefined">No undefined steps</div>
+    </div>
+    
+  </div>
+</div>
+</div>
+
+      <div id="footer">
+  Generated on Thu Jan 18 14:37:18 2024 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.34 (ruby-3.0.0).
+</div>
+
+    </div>
+  </body>
+</html>

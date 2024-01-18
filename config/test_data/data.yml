@@ -1,0 +1,68 @@
+# This section is populated with Environment data required to execute automated test suites on all supported environments
+Environments:
+  QA:
+    PROTOCOL: "https"
+    BASE_URL: "chat.appiumpro.com"
+
+Capabilities:
+  chrome:
+    :driver: :webdriver
+    :browser_size: [500, 900]
+    :capabilities:
+      :browserName: :chrome
+  firefox:
+    :driver: :webdriver
+    :browser_size: [500, 900]
+    :capabilities:
+      :browserName: :firefox
+  edge:
+    :driver: :webdriver
+    :browser_size: [500, 900]
+    :capabilities:
+      :browserName: :edge
+  safari:
+    :driver: :webdriver
+    :browser_size: [500, 900]
+    :capabilities:
+      :browserName: :safari
+  iPhone:
+    :device_type: :phone
+    :driver: :appium
+    :capabilities:
+      :platformName: :ios
+      :browserName: :safari
+      :'appium:platformVersion': '15.4'
+      :'appium:deviceName': 'iPhone 13 Pro Max'
+      :'appium:automationName': 'XCUITest'
+  iPad:
+    :device_type: :tablet
+    :driver: :appium
+    :capabilities:
+      :platformName: :ios
+      :browserName: :safari
+      :'appium:platformVersion': '15.4'
+      :'appium:deviceName': 'iPad Pro (12.9-inch) (5th generation)'
+      :'appium:automationName': 'XCUITest'
+      :'appium:orientation': 'PORTRAIT'
+  android_phone:
+    :device_type: :phone
+    :driver: :appium
+    :capabilities:
+      :platformName: :android
+      :browserName: :chrome
+      :'appium:platformVersion': '12.0'
+      :'appium:deviceName': 'Pixel_5_API_31'
+      :'appium:avd': 'Pixel_5_API_31'
+      :'appium:automationName': 'UiAutomator2'
+      :'appium:chromedriverExecutable': '/Users/Shared/config/webdrivers/chromedriver'
+  android_tablet:
+    :device_type: :tablet
+    :driver: :appium
+    :capabilities:
+      :platformName: :android
+      :browserName: :chrome
+      :'appium:platformVersion': '12.0'
+      :'appium:deviceName': 'Pixel_C_API_31'
+      :'appium:avd': 'Pixel_C_API_31'
+      :'appium:automationName': 'UiAutomator2'
+      :'appium:chromedriverExecutable': '/Users/Shared/config/webdrivers/chromedriver'

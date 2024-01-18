@@ -1,0 +1,37 @@
+  <% desktop = "--require features BROWSER_TILE=true --publish-quiet" %>
+  <% mobile  = "--require features BROWSER_TILE=true --publish-quiet" %>
+  <% reports = "--require features --format pretty --format html --out reports/test_results.html --format junit --out reports --format json --out reports/test_results.json" %>
+
+
+#==============
+# generic test context profiles
+#==============
+failing: --tags '@failing and not @wip'
+wip:     --tags '@wip and not @failing'
+dev:     --tags '@dev and (not @wip and not @failing)'
+
+
+#==============
+# test reporting profiles
+#==============
+report:   <%= reports %> REPORTING=true
+
+
+#==============
+# target_test_environment profiles
+#==============
+qa: TEST_ENVIRONMENT=QA BROWSER_TILE=true --publish-quiet
+
+
+#==============
+# browser combinations profiles
+#==============
+desktop: BROWSERS=desktop_only --profile qa <%= desktop %>
+mobile:  BROWSERS=mobile_only --profile qa --profile run_appium <%= mobile %>
+combined: BROWSERS=combined --profile qa --profile run_appium
+
+
+  #==============
+# profile to start Appium Server prior to running mobile browser tests on iOS or Android simulators or physical devices
+#==============
+run_appium: APPIUM_SERVER=run
