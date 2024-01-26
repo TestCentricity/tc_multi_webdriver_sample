@@ -8,6 +8,11 @@ end
 BeforeAll do
   $feature = nil
   $users = []
+  # create Cucumber reports folder if it doesn't already exist
+  if ENV['REPORTING']
+    reports_path = "#{Dir.pwd}/reports"
+    Dir.mkdir(reports_path) unless Dir.exist?(reports_path)
+  end
   # start Appium Server if command line option was specified
   if ENV['APPIUM_SERVER'] == 'run'
     $server = TestCentricity::AppiumServer.new
