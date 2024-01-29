@@ -5,7 +5,7 @@ architecture for desktop and mobile web functional testing using the Appium Pro 
 to demonstrate the instantiation of multiple WebDriver instances within a test case or test scenario to support the
 verification of real-time multiple user interactions across multiple concurrent browsers.
 
-Beginning with TestCentricity™ Web version 4.4.0, the `TestCentricity::WebDriverConnect.initialize_web_driver` method accepts
+Beginning with TestCentricity™ Web version 4.4.0, the `WebDriverConnect.initialize_web_driver` method accepts
 an optional `options` hash for specifying desired capabilities (using the W3C protocol), driver type, driver name, endpoint
 URL, device type, and desktop web browser window size information. TestCentricity also now supports the instantiation of
 multiple WebDriver objects to establish connections with, and coordinate test execution between multiple desktop and/or
