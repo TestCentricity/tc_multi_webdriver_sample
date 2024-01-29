@@ -5,6 +5,20 @@ architecture for desktop and mobile web functional testing using the Appium Pro 
 to demonstrate the instantiation of multiple WebDriver instances within a test case or test scenario to support the
 verification of real-time multiple user interactions across multiple concurrent browsers.
 
+Beginning with TestCentricity™ Web version 4.4.0, the `TestCentricity::WebDriverConnect.initialize_web_driver` method accepts
+an optional `options` hash for specifying desired capabilities (using the W3C protocol), driver type, driver name, endpoint
+URL, device type, and desktop web browser window size information. TestCentricity also now supports the instantiation of
+multiple WebDriver objects to establish connections with, and coordinate test execution between multiple desktop and/or
+mobile web browser instances.
+
+Some use cases for the verification of real-time multiple user interactions across multiple concurrent browsers or devices are:
+- Chat, Messaging, or Social Media apps/web portals used by one or more users interacting in real time (posts, reposts, likes)
+- Ride Hailing/Sharing Services with separate Rider and Driver experience apps/web portals
+- Food Delivery Services with a Customer app for finding restaurants and ordering food, a Restaurant app for fulfilling
+  the food order and coordinating delivery, and a Driver app for ensuring delivery of the order to the customer
+- Learning Management/Student Engagement platforms that allow teachers to monitor student engagement and progress on assigned
+  activities and support for remote real-time collaboration between students and teachers
+
 This project was inspired by [**Edition 118 (Testing Real-Time User Interaction Using Multiple Simultaneous Appium Sessions)**](https://appiumpro.com/editions/118-testing-real-time-user-interaction-using-multiple-simultaneous-appium-sessions)
 on the Appium Pro web site.
 
