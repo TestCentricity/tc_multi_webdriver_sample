@@ -61,12 +61,32 @@
         <div class="clear"></div>
       </div>
 
-      <div id="content"><div id='filecontents'><h1 id="tc_multi_webdriver_example">tc_multi_webdriver_example</h1>
+      <div id="content"><div id='filecontents'><h1 id="tc_multi_webdriver_sample">tc_multi_webdriver_sample</h1>
 
 <p>This is a Cucumber based sample test suite and framework utilizing the TestCentricity™ Web gem and a page-object model
-architecture for desktop and mobile web functional testing of the Appium Pro Chat web portal. This example is intended
+architecture for desktop and mobile web functional testing using the Appium Pro Chat web portal. This example is intended
 to demonstrate the instantiation of multiple WebDriver instances within a test case or test scenario to support the
 verification of real-time multiple user interactions across multiple concurrent browsers.</p>
+
+<p>Beginning with TestCentricity™ Web version 4.4.0, the <code>TestCentricity::WebDriverConnect.initialize_web_driver</code> method accepts
+an optional <code>options</code> hash for specifying desired capabilities (using the W3C protocol), driver type, driver name, endpoint
+URL, device type, and desktop web browser window size information. TestCentricity also now supports the instantiation of
+multiple WebDriver objects to establish connections with, and coordinate test execution between multiple desktop and/or
+mobile web browser instances.</p>
+
+<p>Some use cases for the verification of real-time multiple user interactions across multiple concurrent browsers or devices are:</p>
+
+<ul>
+<li>Chat, Messaging, or Social Media apps/web portals used by one or more users interacting in real time (posts, reposts, likes)</li>
+<li>Ride Hailing/Sharing Services with separate Rider and Driver experience apps/web portals</li>
+<li>Food Delivery Services with a Customer app for finding restaurants and ordering food, a Restaurant app for fulfilling
+the food order and coordinating delivery, and a Driver app for ensuring delivery of the order to the customer</li>
+<li>Learning Management/Student Engagement platforms that allow teachers to monitor student engagement and progress on assigned
+activities and support for remote real-time collaboration between students and teachers</li>
+</ul>
+
+<p>This project was inspired by <a href="https://appiumpro.com/editions/118-testing-real-time-user-interaction-using-multiple-simultaneous-appium-sessions"><strong>Edition 118 (Testing Real-Time User Interaction Using Multiple Simultaneous Appium Sessions)</strong></a>
+on the Appium Pro web site.</p>
 
 <h2 id="gem-dependencies">Gem Dependencies:</h2>
 
@@ -82,15 +102,15 @@ verification of real-time multiple user interactions across multiple concurrent 
 
 <h2 id="prerequisites-to-running-tests">Prerequisites to running tests:</h2>
 
-<p>In order for Cucumber to execute the features and scenarios in the <code>tc_multi_webdriver_example</code> test automation project
+<p>In order for Cucumber to execute the features and scenarios in the <code>tc_multi_webdriver_sample</code> test automation project
 against desktop web browsers, you must have the Chrome, Firefox, and Edge desktop browsers installed on the test system
 where the tests will be run.</p>
 
-<p>The <code>tc_multi_webdriver_example</code> test automation project also supports running tests against mobile web browsers running
+<p>The <code>tc_multi_webdriver_sample</code> test automation project also supports running tests against mobile web browsers running
 on iOS simulators and Android virtual device emulators. The capabilities profiles for running tests against an iPhone,
 iPad, Android phone, and an Android tablet are stored in the test data asset file located at <code>/config/test_data/data.yml</code>.</p>
 
-<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_📁'>📁</span> <span class='id identifier rubyid_tc_multi_webdriver_example'>tc_multi_webdriver_example</span>
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_📁'>📁</span> <span class='id identifier rubyid_tc_multi_webdriver_sample'>tc_multi_webdriver_sample</span>
  <span class='id identifier rubyid_├──'>├──</span> <span class='id identifier rubyid_📁'>📁</span> <span class='id identifier rubyid_config'>config</span>
  <span class='id identifier rubyid_│'>│</span>   <span class='id identifier rubyid_└──'>└──</span> <span class='id identifier rubyid_📁'>📁</span> <span class='id identifier rubyid_test_data'>test_data</span>
  <span class='id identifier rubyid_│'>│</span>       <span class='id identifier rubyid_└──'>└──</span> <span class='id identifier rubyid_📄'>📄</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_yml'>yml</span>
@@ -139,7 +159,7 @@ and devices.</p>
 
 <h2 id="instructions-for-running-tests">Instructions for running tests</h2>
 
-<p>In order for Cucumber to execute features or scenarios from the <code>tc_multi_webdriver_example</code> test automation project, the
+<p>In order for Cucumber to execute features or scenarios from the <code>tc_multi_webdriver_sample</code> test automation project, the
 <code>test_context</code> must be specified in the Cucumber command line at runtime. There are 3 test execution modes, or <code>test_context</code>,
 that are supported:</p>
 
@@ -184,7 +204,7 @@ that are supported:</p>
 in real-time.</p></li>
 <li><p>Upon completion of test execution, the Terminal will display the final test results.</p></li>
 <li><p>If you specified in the command line that HTML formatted test results should be generated (<code>-p report</code>), you can view 
-them by opening the <code>reports</code> folder in the <code>tc_multi_webdriver_example</code> project directory, and selecting the <code>test_results.html</code>
+them by opening the <code>reports</code> folder in the <code>tc_multi_webdriver_sample</code> project directory, and selecting the <code>test_results.html</code>
 file. Right-clicking on the <code>test_results.html</code> file will display a popup menu. Select the <strong>Open in Browser</strong> menu
 item, and then select a web browser from the popup sub menu that appears. The formatted test results will open in the
 web browser that you selected.</p></li>
@@ -195,7 +215,7 @@ web browser that you selected.</p></li>
 <p>Detailed HTML documentation of the features, scenarios, step definitions, classes, and methods for the <code>tc_multi_webdriver_example</code>
 project can be accessed from the <code>index.html</code> file within the <code>doc</code> folder in the <code>tc_multi_webdriver_example</code> project folder:</p>
 
-<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_📁'>📁</span> <span class='id identifier rubyid_tc_multi_webdriver_example'>tc_multi_webdriver_example</span>
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_📁'>📁</span> <span class='id identifier rubyid_tc_multi_webdriver_sample'>tc_multi_webdriver_sample</span>
  <span class='id identifier rubyid_├──'>├──</span> <span class='id identifier rubyid_📁'>📁</span> <span class='id identifier rubyid_config'>config</span>
  <span class='id identifier rubyid_├──'>├──</span> <span class='id identifier rubyid_📁'>📁</span> <span class='id identifier rubyid_doc'>doc</span>
  <span class='id identifier rubyid_│'>│</span>   <span class='id identifier rubyid_└──'>└──</span> <span class='id identifier rubyid_📄'>📄</span> <span class='id identifier rubyid_index'>index</span><span class='period'>.</span><span class='id identifier rubyid_html'>html</span>
@@ -207,7 +227,7 @@ project can be accessed from the <code>index.html</code> file within the <code>d
 </div></div>
 
       <div id="footer">
-  Generated on Thu Jan 18 14:37:17 2024 by
+  Generated on Mon Jan 29 11:53:39 2024 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.34 (ruby-3.0.0).
 </div>
