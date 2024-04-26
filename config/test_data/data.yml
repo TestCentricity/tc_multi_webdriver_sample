@@ -31,7 +31,7 @@ Capabilities:
     :capabilities:
       :platformName: :ios
       :browserName: :safari
-      :'appium:platformVersion': '15.4'
+      :'appium:platformVersion': '17.2'
       :'appium:deviceName': 'iPhone 13 Pro Max'
       :'appium:automationName': 'XCUITest'
   iPad:
@@ -40,8 +40,8 @@ Capabilities:
     :capabilities:
       :platformName: :ios
       :browserName: :safari
-      :'appium:platformVersion': '15.4'
-      :'appium:deviceName': 'iPad Pro (12.9-inch) (5th generation)'
+      :'appium:platformVersion': '17.2'
+      :'appium:deviceName': 'iPad Pro (12.9-inch) (6th generation)'
       :'appium:automationName': 'XCUITest'
       :'appium:orientation': 'PORTRAIT'
   android_phone:
