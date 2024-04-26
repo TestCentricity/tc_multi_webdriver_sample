@@ -61,8 +61,8 @@ profiles in `data.yml` file are currently set to the following:
 
 | Mobile device browser | OS version ('appium:platformVersion':) | Device name ('appium:deviceName': / 'appium:avd':) |
 |-----------------------|----------------------------------------|----------------------------------------------------|
-| `:iPhone`             | '15.4'                                 | 'iPhone 13 Pro Max'                                |
-| `:iPad`               | '15.4'                                 | 'iPad Pro (12.9-inch) (5th generation)'            |
+| `:iPhone`             | '17.2'                                 | 'iPhone 13 Pro Max'                                |
+| `:iPad`               | '17.2'                                 | 'iPad Pro (12.9-inch) (6th generation)'            |
 | `:android_phone`      | '12.0'                                 | 'Pixel_5_API_31'                                   |
 | `:android_tablet`     | '12.0'                                 | 'Pixel_C_API_31'                                   |
 
