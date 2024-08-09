@@ -34,6 +34,7 @@ Capabilities:
       :'appium:platformVersion': '17.2'
       :'appium:deviceName': 'iPhone 13 Pro Max'
       :'appium:automationName': 'XCUITest'
+      :'appium:wdaLocalPort': 8100
   iPad:
     :device_type: :tablet
     :driver: :appium
@@ -44,6 +45,7 @@ Capabilities:
       :'appium:deviceName': 'iPad Pro (12.9-inch) (6th generation)'
       :'appium:automationName': 'XCUITest'
       :'appium:orientation': 'PORTRAIT'
+      :'appium:wdaLocalPort': 8101
   android_phone:
     :device_type: :phone
     :driver: :appium
