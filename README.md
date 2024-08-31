@@ -1,15 +1,15 @@
 # tc_multi_webdriver_sample
 
-This is a Cucumber based sample test suite and framework utilizing the TestCentricity™ Web gem and a page-object model
+This is a Cucumber based sample test suite and framework utilizing the TestCentricity™ For Web gem and a page-object model
 architecture for desktop and mobile web functional testing using the Appium Pro Chat web portal. This example is intended
 to demonstrate the instantiation of multiple WebDriver instances within a test case or test scenario to support the
 verification of real-time multiple user interactions across multiple concurrent browsers.
 
-Beginning with TestCentricity™ Web version 4.4.0, the `WebDriverConnect.initialize_web_driver` method accepts
-an optional `options` hash for specifying desired capabilities (using the W3C protocol), driver type, driver name, endpoint
-URL, device type, and desktop web browser window size information. TestCentricity also now supports the instantiation of
-multiple WebDriver objects to establish connections with, and coordinate test execution between multiple desktop and/or
-mobile web browser instances.
+Beginning with TestCentricity™ Web version 4.4.0, the `WebDriverConnect.initialize_web_driver` method accepts an optional
+`options` hash for specifying desired capabilities (using the W3C protocol), driver type, driver name, endpoint URL, device
+type, and desktop web browser window size information. TestCentricity also now supports the instantiation of multiple
+WebDriver objects to establish connections with, and coordinate test execution between multiple desktop and/or mobile web
+browser instances.
 
 Some use cases for the verification of real-time multiple user interactions across multiple concurrent browsers or devices are:
 - Chat, Messaging, or Social Media apps/web portals used by one or more users interacting in real time (posts, reposts, likes)
