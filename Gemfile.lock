@@ -3,11 +3,11 @@ GEM
   specs:
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
-    appium_lib (15.2.2)
+    appium_lib (15.3.0)
       appium_lib_core (~> 9.2, >= 9.2.1)
       nokogiri (~> 1.8, >= 1.8.1)
       tomlrb (>= 1.1, < 3.0)
-    appium_lib_core (9.2.1)
+    appium_lib_core (9.5.0)
       faye-websocket (~> 0.11.0)
       selenium-webdriver (~> 4.21)
     axiom-types (0.1.1)
@@ -15,7 +15,7 @@ GEM
       ice_nine (~> 0.11.0)
       thread_safe (~> 0.3, >= 0.3.1)
     base64 (0.2.0)
-    bigdecimal (3.1.8)
+    bigdecimal (3.1.9)
     browserstack-local (1.4.3)
     builder (3.3.0)
     capybara (3.40.0)
@@ -33,8 +33,8 @@ GEM
     coderay (1.1.3)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
-    concurrent-ruby (1.3.4)
-    cucumber (9.2.0)
+    concurrent-ruby (1.3.5)
+    cucumber (9.2.1)
       builder (~> 3.2)
       cucumber-ci-environment (> 9, < 11)
       cucumber-core (> 13, < 14)
@@ -55,7 +55,7 @@ GEM
       bigdecimal
     cucumber-gherkin (27.0.0)
       cucumber-messages (>= 19.1.4, < 23)
-    cucumber-html-formatter (21.7.0)
+    cucumber-html-formatter (21.8.0)
       cucumber-messages (> 19, < 27)
     cucumber-messages (22.0.0)
     cucumber-tag-expressions (6.1.1)
@@ -68,46 +68,46 @@ GEM
     faye-websocket (0.11.3)
       eventmachine (>= 0.12.0)
       websocket-driver (>= 0.5.1)
-    ffi (1.17.0-x86_64-darwin)
-    i18n (1.14.6)
+    ffi (1.17.1-x86_64-darwin)
+    i18n (1.14.7)
       concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
-    logger (1.6.1)
+    logger (1.6.5)
     matrix (0.4.2)
     method_source (1.1.0)
     mini_mime (1.1.5)
     multi_test (1.1.0)
-    nokogiri (1.16.7-x86_64-darwin)
+    nokogiri (1.18.2-x86_64-darwin)
       racc (~> 1.4)
     os (1.1.4)
     parallel (1.26.3)
-    parallel_tests (4.7.2)
+    parallel_tests (4.9.0)
       parallel
-    power_assert (2.0.4)
-    pry (0.14.2)
+    power_assert (2.0.5)
+    pry (0.15.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
     public_suffix (6.0.1)
     racc (1.8.1)
     rack (3.1.8)
-    rack-test (2.1.0)
+    rack-test (2.2.0)
       rack (>= 1.3)
-    regexp_parser (2.9.2)
+    regexp_parser (2.10.0)
     require_all (1.5.0)
-    rexml (3.3.9)
-    rubyzip (2.3.2)
-    selenium-webdriver (4.26.0)
+    rexml (3.4.0)
+    rubyzip (2.4.1)
+    selenium-webdriver (4.28.0)
       base64 (~> 0.2)
       logger (~> 1.4)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
-    sys-uname (1.3.0)
+    sys-uname (1.3.1)
       ffi (~> 1.1)
-    test-unit (3.6.2)
+    test-unit (3.6.7)
       power_assert
-    testcentricity_web (4.5.15)
-      appium_lib (~> 15.2.2)
+    testcentricity_web (4.6.0)
+      appium_lib (~> 15.3.0)
       browserstack-local
       capybara (= 3.40.0)
       childprocess
@@ -115,7 +115,7 @@ GEM
       faker
       i18n
       os (~> 1.0)
-      selenium-webdriver (= 4.26.0)
+      selenium-webdriver (= 4.28.0)
       test-unit
       virtus
     thread_safe (0.3.6)
@@ -125,7 +125,8 @@ GEM
       coercible (~> 1.0)
       descendants_tracker (~> 0.0, >= 0.0.3)
     websocket (1.2.11)
-    websocket-driver (0.7.6)
+    websocket-driver (0.7.7)
+      base64
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     xpath (3.2.0)
@@ -135,11 +136,11 @@ PLATFORMS
   x86_64-darwin-21
 
 DEPENDENCIES
-  cucumber (= 9.2.0)
+  cucumber (= 9.2.1)
   parallel_tests
   pry
   require_all (= 1.5.0)
-  testcentricity_web (= 4.5.15)
+  testcentricity_web (= 4.6.0)
 
 BUNDLED WITH
    2.3.26
