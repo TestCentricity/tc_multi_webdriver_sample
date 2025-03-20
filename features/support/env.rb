@@ -28,3 +28,6 @@ WorldData.instantiate_data_objects
 # instantiate all page objects
 include WorldPages
 WorldPages.instantiate_page_objects
+
+# suppress Capybara warnings for :clear_local_storage and :clear_session_storage
+Selenium::WebDriver.logger.ignore(:clear_local_storage, :clear_session_storage)
