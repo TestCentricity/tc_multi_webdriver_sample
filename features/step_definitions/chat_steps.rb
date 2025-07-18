@@ -63,7 +63,7 @@ def initiate_chat(user)
   browser_config = ENV['BROWSERS'].downcase.to_sym
   browsers = case browser_config
              when :desktop_only
-               [:chrome, :firefox, :edge, :safari]
+               [:chrome, :firefox, :safari, :edge]
              when :mobile_only
                [:android_phone, :iPhone, :android_tablet, :iPad]
              when :combined
